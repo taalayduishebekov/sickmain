@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PORTFOLIOPAGE</title>
+  <link rel="stylesheet" href="css/style.min.css?_v=20220218152841" />
+  <link rel="shortcut icon" href="img/s_letter.svg">
+  <script src="https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.iife.js?_v=20220218152841"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js?_v=20220218152841"></script>
+
+</head>
+</head>
+<body class="aboutpage">
+  <header>
+  <div>
+    <button class="header__button nav-btn-js" type="button"></button>
+    <nav class="header__nav nav-js" data-active="false">
+      <div class="menu">
+        <div class="menu-item-container">
+          <div class="menu-item">
+            <div class="menu-item-wrapper">
+              <div class="menu-arrow">
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+              </div>
+              <div class="menu-text">
+                <a class="menu_item" href="/index.html">Sick & Tired</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-wrapper">
+              <div class="menu-arrow">
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+              </div>
+              <div class="menu-text">
+                <a class="menu_item" href="#">Shop</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-wrapper">
+              <div class="menu-arrow">
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+              </div>
+              <div class="menu-text">
+                <a class="menu_item" href="about.html">Portfolio</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-wrapper">
+              <div class="menu-arrow">
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+              </div>
+              <div class="menu-text">
+                <a class="menu_item" href="#">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const revealerNav = window.revealer({
+      revealElementSelector: ".nav-js",
+      options: {
+        anchorSelector: ".nav-btn-js",
+      },
+    });
+
+    const actionBtn = document.querySelector(".nav-btn-js");
+    actionBtn.addEventListener("click", () => {
+      if (!revealerNav.isRevealed()) {
+        revealerNav.reveal();
+        actionBtn.setAttribute("data-open", true);
+      } else {
+        revealerNav.hide();
+        actionBtn.setAttribute("data-open", false);
+      }
+    });
+  });
+</script>
+
+  <div class="container-fluid" id="gsrCont">
+    <div class="contentImg">
+         <picture><source srcset="img/card.webp" type="image/webp"><img src="img/card.png" alt=""></picture>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="text">
+      <div class="textcontent">
+
+        Креатив на силе <br>
+        человеческого <br>
+        самовыражения - <br>
+        Не про мой дизайн <br>
+      </div>
+  </div>
+
+
+ 
+  <div class="container-fluid" id="imagebox">
+    <div class="photobox photobox_flat photobox_scale-sliding">
+      <div class="photobox__previewbox media-placeholder">
+        <picture><source srcset="img/cards.webp" type="image/webp"><img src="img/cards.png" class="photobox__preview media-placeholder__media" alt></picture>          
+      </div>
+      <div class="photobox__info-wrapper">
+        <div class="photobox__info"><span>some effect</span></div>
+      </div>
+    </div>      
+    <div class="photobox photobox_flat photobox_scale-sliding">
+      <div class="photobox__previewbox media-placeholder">
+        <picture><source srcset="img/01.webp" type="image/webp"><img src="img/01.png" class="photobox__preview media-placeholder__media" alt></picture>          
+      </div>
+      <div class="photobox__info-wrapper">
+        <div class="photobox__info"><span>some effect</span></div>    
+      </div>
+    </div>
+    <div class="photobox photobox_flat photobox_scale-sliding">
+      <div class="photobox__previewbox media-placeholder">
+        <picture><source srcset="img/02.webp" type="image/webp"><img src="img/02.png" class="photobox__preview media-placeholder__media" alt></picture>          
+      </div>
+      <div class="photobox__info-wrapper">
+        <div class="photobox__info"><span>some effect</span></div>    
+      </div>
+    </div>
+    <div class="photobox photobox_flat photobox_scale-sliding">
+      <div class="photobox__previewbox media-placeholder">
+        <picture><source srcset="img/03.webp" type="image/webp"><img src="img/03.png" class="photobox__preview media-placeholder__media" alt></picture>          
+      </div>
+      <div class="photobox__info-wrapper">
+        <div class="photobox__info"><span>some effect</span></div>    
+      </div>
+    </div>
+        
+  </div>  
+
+  <script src="/js/app.min.js?_v=20220218152841"></script>
+
+
+</body>
+</html>
+  

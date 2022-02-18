@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GSR-EXPRESS</title>
+  <link rel="stylesheet" href="css/style.min.css?_v=20220218152841" />
+  <link rel="shortcut icon" href="img/s_letter.svg">
+  <script src="https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.iife.js?_v=20220218152841"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js?_v=20220218152841"></script>
+
+</head>
+	<body class="gsrpage">
+  <header>
+  <div>
+    <button class="header__button nav-btn-js" type="button"></button>
+    <nav class="header__nav nav-js" data-active="false">
+      <div class="menu">
+        <div class="menu-item-container">
+          <div class="menu-item">
+            <div class="menu-item-wrapper">
+              <div class="menu-arrow">
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+              </div>
+              <div class="menu-text">
+                <a class="menu_item" href="/index.html">Sick & Tired</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-wrapper">
+              <div class="menu-arrow">
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+              </div>
+              <div class="menu-text">
+                <a class="menu_item" href="#">Shop</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-wrapper">
+              <div class="menu-arrow">
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+              </div>
+              <div class="menu-text">
+                <a class="menu_item" href="about.html">Portfolio</a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-wrapper">
+              <div class="menu-arrow">
+                <ion-icon name="arrow-forward-sharp"></ion-icon>
+              </div>
+              <div class="menu-text">
+                <a class="menu_item" href="#">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const revealerNav = window.revealer({
+      revealElementSelector: ".nav-js",
+      options: {
+        anchorSelector: ".nav-btn-js",
+      },
+    });
+
+    const actionBtn = document.querySelector(".nav-btn-js");
+    actionBtn.addEventListener("click", () => {
+      if (!revealerNav.isRevealed()) {
+        revealerNav.reveal();
+        actionBtn.setAttribute("data-open", true);
+      } else {
+        revealerNav.hide();
+        actionBtn.setAttribute("data-open", false);
+      }
+    });
+  });
+</script>
+
+ <div class="container-fluid" id="gsrCont">
+   <div class="contentImg">
+        <picture><source srcset="img/card.webp" type="image/webp"><img src="img/card.png" alt=""></picture>
+   </div>
+ </div>
+
+  <div class="container-fluid" id="text">
+      <div class="textcontent1">
+        <span id="lowtext">GSR.Express</span>
+
+        <br><br>
+
+        <span id="GsrText">Вместе сквозь <br>
+        все препятствия <br></span>
+      <span id="loremtext"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero quae, incidunt </span>
+      
+      </div>
+  </div>
+
+<div class="container-fluid" id="vectorpng">
+  <div class="vectorimg">
+    <picture><source srcset="img/vector.webp" type="image/webp"><img src="img/vector.png" class="img-fluid" alt=""></picture>
+  </div>
+</div>
+<div class="container-fluid" id="morepng"></div>
+  <div class="moreimg">
+    <picture><source srcset="img/3.webp" type="image/webp"><img src="img/3.png" alt=""></picture><img src="img/pomeha.png" alt="">
+</div>
+<div class="container-fluid" id="textsecond">
+  <div class="textcontent2">
+  
+  <span id="loremtext"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero quae, incidunt </span>
+  
+  </div>
+</div>
+<div class="container-fluid" id="sanjpng">
+  <div class="sanjarpng">
+    <picture><source srcset="img/sanjar.webp" type="image/webp"><img src="img/sanjar.png" class="img-fluid" alt=""></picture>
+  </div>
+</div>
+				
+	</body>
+</html>
